@@ -1,0 +1,37 @@
+site_name: Hermetis
+theme:
+  name: material
+  features:
+    # - navigation.tabs
+    - navigation.sections
+    # - toc.integrate
+    - navigation.top
+
+nav:
+  - 'quickStart.md'
+  - 'overview.md'
+  - 'specifications.md'
+  - 'userGuide.md'
+  - 'configuration.md'
+
+# extra:
+#   alternate:
+#     - name: Español
+#       link: /es/
+#       lang: es
+
+
+plugins:
+  - i18n: #mkdocs-static-i18n/
+      default_language: en
+      languages:
+        en: English
+        es: Español
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.critic
+  - admonition
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
