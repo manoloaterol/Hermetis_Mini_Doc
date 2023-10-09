@@ -23,10 +23,15 @@ nav:
 
 plugins:
   - i18n: #mkdocs-static-i18n/
-      default_language: en
+      docs_structure: suffix
       languages:
-        en: English
-        es: Español
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: es
+          name: Español
+          build: true
 
 markdown_extensions:
   - attr_list
